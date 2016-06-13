@@ -1,0 +1,28 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/yoyaku.css' %}" />
+
+<table  border =1 class="waku2">
+<p>休日</p>
+ <tr id="p1"><td><p>10:00~11:00</p></td>
+ 	<td><p>11:15~12:15</p></td>
+ 	<td><p>13:15~14:15</p></td>
+ 	<td><p>14:30~15:30</p></td>
+ 	<td><p>15:45~16:45</p></td></tr>
+ <tr id="p2"><td><p><input type="checkbox" value="1"></p></td>
+ 	<td><p><input type="checkbox" value="2"></p></td>
+ 	<td><p><input type="checkbox" value="3"></p></td>
+ 	<td><p><input type="checkbox" value="4"></p></td>
+ 	<td><p><input type="checkbox" value="5"></p></td></tr>
+</table>
+
+<table  border =1 class="waku4">
+<p>平日</p>
+ <tr id="p3"><td><p>15:00~16:00</p></td>
+ 	<td><p>16:15~17:15</p></td>
+ 	<td><p>17:30~18:30</p></td></tr>
+ <tr id="p4"><td><p><input type="checkbox" value="1"></p></td>
+ 	<td><p><input type="checkbox" value="2"></p></td>
+ 	<td><p><input type="checkbox" value="3"></p></td></tr>
+</table>
+<p><input type="submit" value="送信" onclick="location.href='../table/'"></p>
