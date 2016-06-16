@@ -1,0 +1,17 @@
+#waku{
+	margin: 10px; 
+	height: 400px;
+	width: 900px;
+	border-width: 1px;
+	border-spacing: 10px;
+}
+td{
+	text-align: center;
+	height:150px;
+	width: 500px;
+	}
+	
+.a{
+	margin-top: -100px;
+	}
+

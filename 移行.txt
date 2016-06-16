@@ -1,8 +1,9 @@
-from django.conf.urls import include, url
-from django.contrib import admin
+D:\te4a_team\env1\mysite\mysite\urls.py‚ğŠJ‚¢‚ÄA
+urlpatterns‚Éroom_manager‚ğ’Ç‰Á‚·‚éB
 
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^room_manager/', include('room_manager.urls')),
 ]
+

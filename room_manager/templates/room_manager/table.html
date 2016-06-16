@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/table.css' %}" />
+
+<p>
+	<a href="#" id="link_hidden2" onClick="toggle_hidden2();return false;" style="display:none;">非表示</a>
+	<a href="#" id="link_view2" onClick="toggle_view2();return false;">表示</a>　　　　　　　　　　　　　　
+	<input type="submit" value="時間割" onclick="location.href='../zikanwari/'">
+</p>
+	<table border =1 id="waku" style="visibility:hidden;">
+
+
+
+    {% for name in tmp %}
+        <td><p><a class="a" href="../yoyaku/">{{ name }}</p></td>
+    {% endfor %}
+<!--
+	 	<td><p><a class="a" href="../yoyaku/">102</a></p></td>
+	 	<td><p><a class="a" href="../yoyaku/">103</a></p></td></tr>
+	 <tr><td><p><a class="a" href="../yoyaku/">201</a></p></td>
+	 	<td><p><a class="a" href="../yoyaku/">202</a></p></td>
+	 	<td><p><a class="a" href="../yoyaku/">203</a></p></td></tr>
+	 <tr><td><p><a class="a" href="../yoyaku/">301</a></p></td>
+	 	<td><p><a class="a" href="../yoyaku/">302</a></p></td>
+	 	<td><p><a class="a" href="../yoyaku/">303</a></p></td></tr>
+-->
+	 <tr><td>倉庫</td></tr>
+	 	</tr>
+	</table>
+	
+<script language="JavaScript" type="text/javascript">
+<!--
+var elem2_1 = document.getElementById("waku");
+var elem2_2 = document.getElementById("link_view2");
+var elem2_3 = document.getElementById("link_hidden2");
+function toggle_view2() {
+  elem2_1.style.visibility = "visible";
+  elem2_2.style.display = "none";
+  elem2_3.style.display = "";
+}
+function toggle_hidden2() {
+  elem2_1.style.visibility = "hidden";
+  elem2_2.style.display = "";
+  elem2_3.style.display = "none";
+}
+-->
+</script>
